@@ -2,5 +2,5 @@
 
 Usage
 -----
-node index.js <username> <password> <customerId>
+node index.js username password customerId
 ```bash
