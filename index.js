@@ -42,6 +42,13 @@ console.log(session)
                 param: 'initial',
             })
         );
+        setInterval(() => {
+            ws.send(
+                JSON.stringify({
+                    action: 'ping',
+                })
+            );
+        }, 60000);
     });
 
     ws.on('message', function message(data) {
